@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 # Install prerequisites
 RUN apt-get update && \
-    apt-get install -y fortune-mod cowsay netcat && \
+    apt-get install -y fortune-mod cowsay netcat-openbsd && \
     apt-get clean
 
 # Copy the application script
